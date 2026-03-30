@@ -1,0 +1,93 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Favourite Game Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id="title">Favourite Game Survey Form</h1>
+    <p id="description">Thank you for taking the time to fill in the survey! Please be honest about the details you fill out and feel free to give us any extra feedback. Enjoy!</p>
+  <form id="survey-form">
+    <fieldset>
+      <legend>Personal Information</legend>
+      <label for="name" id="name-label">Full Name (required):</label>
+      <input type="text" id="name" name="name" placeholder="e.g., Big Chungus" required size="20" minlength="2" maxlength="50"/>
+      </br>
+      <label for="email" id="email-label">Email address (required):</label>
+      <input id="email" name="email" type="email" required placeholder="example@email.com" size="20"/>
+      </br>
+      <label for="number" id="number-label">Age (optional):</label>
+      <input type="number" name="number" id="number" placeholder="18" min="3" max="100"/>
+    </fieldset>
+    <fieldset>
+      <legend>Current Role</legend>
+      <label for="role">Which option best describes your current role?
+</label>
+      <label for="dropdown">
+      <select name="role" id="dropdown">
+        <option selected value="student">Student</option>
+        <option value="full-time worker">Full-time Worker</option>
+        <option value="part-time worker">part-time Worker</option>
+        <option value="full-time learner">Full-time Learner</option>
+        <option value="unspecified">Rather not say</option>
+        <option value="other">Other</option>
+      </select>
+      <br/>
+      <label for="other-role">If you chose the other option, please specify:</label>
+      <input id="other-role" name="other-role" type="text" placeholder="e.g., Unemployed" size="20" minlegnth="3" maxlength="60"/>
+    </fieldset>
+    <fieldset>
+      <legend>Game-related work</legend>
+      Are you currently employed in a game-related area?
+      <br/>
+      <input type="radio" name="game-work" id="yes-option" value="yes"/>
+      <label for="yes-option">Yes</label>
+      <input type="radio" name="game-work" id="no-option" value="no"/>
+      <label for="no-option">No</label>
+      <br/>
+      <label for="choose-yes">If you chose yes, please specify:</label>
+      <input id="choose-yes" name="game-job" type="text" placeholder="e.g., Game Developer" size="20" minlegnth="3" maxlength="60"/>
+    </fieldset>
+    <fieldset>
+      <legend>Favourite Genre</legend>
+      <label for="genre">Which genre of games do you most enjoy playing?</label>
+      <select id="genre" name="genre">
+        <option value="shooter">Shooter</option>
+        <option value="adventure">Adventure</option>
+        <option value="rpg">RPG</option>
+        <option selected value="Action">Action</option>
+        <option value="strategy">Strategy</option>
+        <option value="other">Other</option>
+      </select>
+      <br/>
+      <label for="other-role">If you chose the other option, please specify:</label>
+      <input id="other-role" name="other-role" type="text" placeholder="e.g., Sports" size="20" minlegnth="3" maxlength="60"/>
+       </select>
+    </fieldset>
+    <fieldset>
+      <legend>Which category of games would you like to see more of in the future? (check all that apply)</legend>
+      <input type="checkbox" id="open-world" name="choice" value="open-world">
+      <label for="open-world">Open-World</label>
+      <input type="checkbox" id="rpg" name="choice" value="rpg">
+      <label for="rpg">RPG</label>
+      <input type="checkbox" id="afk" name="choice" value="afk">
+      <label for="afk">AFK (idle games)</label>
+      <input type="checkbox" id="rogue-like" name="choice" value="rogue-like">
+      <label for="rogue-like">Roguelike</label>
+      <input type="checkbox" id="gacha" name="choice" value="gacha">
+      <label for="rogue-like">Gacha</label>
+      <input type="checkbox" id="survival" name="choice" value="survival">
+      <label for="survival">Survival</label>
+    </fieldset>
+    <label for="comments">Any other comments? Please let us know your game preference further, or provide feedback on this survey!</labels>
+    <textarea name="comments" id="comments" cols="40" rows="5"></textarea>
+    <button type="submit" id="submit">Submit!</button>
+  </body>
+  </form>
+</html>
+
+** end of index.html **
+
